@@ -16,41 +16,35 @@ public class TBA {
     Random rand = new Random();
     public static int dado(int arg) {
         Random rand = new Random();
+        
         int valor = rand.nextInt(arg - 1) + 1;
         return valor;
     }
 
     
     public static void main(String[] args) {
+        sheet player = new sheet();
         Scanner input = new Scanner(System.in);
         Random rand = new Random();
-        int d6;
+        int d4, d6, d8, d10, d12, d20;
         
-        String arm, pNome;
-        int pHp, pMHp;
-        int pMp, pMMp;
-        int pArm, pWep;
-        String pArmN, pWepN;
-        int[] pCons;
-        
-        
-        pArm = 1;
-        switch(pArm){
-            case 1:
-                pArmN = "Leather Armor";
-                break;
-            case 2:
-                pArmN = "Iron Armor";
-                break;
-        }
-        
-        System.out.print("Qual é o nome do seu personagem? ");
-        pNome = input.next();
-        
-        
+        d4 = dado(4);
         d6 = dado(6);
-        System.out.println(d6);
-        System.out.println(pNome);
+        d8 = dado(8);
+        d10 = dado(10);
+        d12 = dado(12);
+        d20 = dado(20);
+        
+        player.sheet();
+        
+        
+        
+        
+        
+     
+        
+        
+        
         
        
 
